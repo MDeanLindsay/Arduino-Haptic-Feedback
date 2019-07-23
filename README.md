@@ -9,3 +9,6 @@ Providing devices power supply can be stripped, the 5V relay can be used to swit
 
 OpenCV parameters are configured to match 1980 x 1080 display of a specic test game's font to capture health values.
 Updating OCR can/may be required depending on targeted games stylized UI's to properly capture values.
+
+
+OpenCV files: https://drive.google.com/open?id=1ceox-DXmDUlX-XZ70KAEuUiqNlkdzOPv
