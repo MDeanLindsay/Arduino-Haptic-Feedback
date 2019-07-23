@@ -7,10 +7,20 @@ import serial
 
 class Process:
     def __init__(self):
+	''' 
+	Defining initial values. 
+	'''
         self.currentHealth = 100
         self.ocrErr = False
 
     def processImg(self, greyImg):
+	''' 
+	Processing initial health image with pytesseract.
+	Set to grey scale due to consistency of img return.
+	
+	Statements determine change in health values that return to ard
+	with error cases.
+	'''
         self.currentHealth
         txt = pytesseract.image_to_string(greyImg)
         print(txt)
@@ -39,8 +49,11 @@ class Process:
     return ard
 
 def main():
+    '''
+    Defining OpenCV window and calling pocessImg with output.
+    '''
     ard = getPort()
-    process = Process()
+    process = Process()	
     while(True):
         x = 200
         y = 800
